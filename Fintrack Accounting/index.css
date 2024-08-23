@@ -1,0 +1,239 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    box-sizing: border-box;
+    font-family:"Open Sans", sans-serif;
+}
+/*header section*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    width: 90%;
+    margin: 0px auto;
+    padding: 1em;
+}
+.header_title{
+    letter-spacing: -0.05em;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    flex:1;
+    
+}
+.header_menu{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex:1;
+    justify-content: center;
+}
+.header_link{
+    text-decoration: none;
+    color: black;
+}
+.header_btn-container{
+    display: flex;
+    gap: 1rem;
+    flex:1;
+    justify-content: end;
+}
+.header_bars_btn{
+    display: none;
+}
+@media(max-width:979px){
+    .header_title{
+        font-size: 1.2rem;
+    }
+    .header_link{
+        font-size: .8rem;
+    }
+    .header_btn{
+        font-size: .6rem;
+    }
+}
+@media(max-width:783px){
+    .header_title{
+        font-size: 1rem;
+    }
+    .header_link{
+        font-size: 0.6rem;
+    }
+    .header_btn{
+        font-size:0.4rem;
+    }
+}
+@media(max-width:653px){
+    .header_title{
+        font-size: 0.8rem;
+    }
+    .header_link{
+        display: none;
+    }
+    .header_btn{
+        display: none;
+    }
+    .header_bars_btn{
+        display: none;
+    }
+}
+
+
+/*hero section*/
+.hero{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.hero_title{
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: -0.05em;
+    font-weight: bolder;
+}
+.hero_description{
+    font-size: 1.25rem;
+    text-align: center;
+    margin:1rem 0rem ;
+}
+
+/* pricing section css */
+.pricing{
+    border: 2px solid red;
+    margin:9rem;
+}
+.pricing_title{
+    font-size: 2.25rem;
+    letter-spacing: -0.05em;
+    margin-bottom: 1rem;
+}
+.pricing_description{
+    font-size: 1.25rem;
+}
+.pricing_options{
+    display: flex;
+    gap: 10rem;
+}
+.pricing_box{
+    margin: 2rem;
+    border: 2px solid yellow; 
+    background-color: black;
+    color: white;
+    padding: 2em;
+    border-radius: 20px;
+}
+.pricing_cost{
+    font-size: 2rem;
+}
+.pricing_plan{
+    margin: 1em;
+}
+.pricing_details{
+    color: #ccc;
+}
+.pricing_btn{
+    background-color: white;
+    color: black;
+    border-radius: 10000000px;
+    padding: .5em 1em;
+    margin: 2em 0;
+    text-align: center;
+    width: 90%;
+}
+.pricing_list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: .9rem;
+    color: #ccc;
+}
+
+/* features section css*/
+.features{
+    margin: 9rem;
+    text-align: center;
+}
+.features_title{
+    text-align: center;
+    font-size: 2.25rem;
+    letter-spacing: -0.05em;
+}
+.features_description{
+    text-align: center;
+    font-size: 1.25rem;
+    max-width: 40ch;
+    margin: 1em auto;
+}
+.featuresbox_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.features_box{
+    border: 2px solid #ccc;
+    width: 500px;
+    border-radius: 10px;
+    padding: 2rem;
+}
+.featuresbox_title{
+    font-size: 1.2rem;
+}
+
+/* utility class*/
+.btn{
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+.btn_1{
+    margin-bottom: 10rem;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+.container{
+    width: 90%;
+    margin-inline:auto;
+}
+/* last section*/
+.last{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+.last_title{
+    margin-bottom:1rem;
+    font-size: 2rem;
+    letter-spacing: -0.05em;
+    font-weight: bolder;
+}
+.last_description{
+    font-size: 1.1rem;
+    max-width: 60ch;
+    margin: 1em auto;  
+}
+.btn_2{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: .5em 1em;
+    border: none;
+    margin-bottom: 20rem;
+}
+.footer{
+    font-weight:100;
+    text-align: center;
+    justify-content: center;
+}
